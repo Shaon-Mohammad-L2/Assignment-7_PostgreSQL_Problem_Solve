@@ -1,1 +1,8 @@
-# Assignment-7_PostgreSQL_Problem_Solve
+# Questions & Answer 
+
+---
+
+### 1. PostgreSQL কী?
+PostgreSQL হলো একটি ওপেন-সোর্স রিলেশনাল ডাটাবেস ম্যানেজমেন্ট সিস্টেম (RDBMS), যা SQL ব্যবহার করে ডেটা সংরক্ষণ ও ম্যানেজ করে | 
+
+---
