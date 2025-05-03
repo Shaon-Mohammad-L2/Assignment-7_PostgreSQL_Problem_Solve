@@ -38,3 +38,14 @@ LIMIT এবং OFFSET clauses সাধারণত ডাটাবেস ক�
   
 ---
 
+### 7. How can you modify data using UPDATE statements?
+
+UPDATE statements ব্যবহার করে ডাটাবেসের এক বা একাধিক row-এর ডেটা পরিবর্তন করা যায়। এতে সাধারণত টেবিলের নাম, কোন কলামগুলো আপডেট করতে হবে, নতুন মান কি হবে, এবং Condition কি হবে সেটি দেওয়া হয়।
+* **Example** :
+UPDATE table_name
+SET column1 = new_value1, column2 = new_value2, ...
+WHERE condition;
+
+এখানে Condition তা নির্দিষ্ট টার্গেট এর জন্য নাহলে পুরো টেবিল/কলাম এর ডাটা আপডেট করে দিবে 
+
+---
