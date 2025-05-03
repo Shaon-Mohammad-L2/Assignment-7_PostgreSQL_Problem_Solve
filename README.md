@@ -50,3 +50,17 @@ WHERE condition;
 এখানে Condition তা নির্দিষ্ট টার্গেট এর জন্য নাহলে পুরো টেবিল/কলাম এর ডাটা আপডেট করে দিবে 
 
 ---
+
+### 8. What is the significance of the JOIN operation, and how does it work in PostgreSQL?
+
+JOIN অপারেশনের মূল উদ্দেশ্য হলো একাধিক টেবিলের মধ্যে সম্পর্ক তৈরি করে ডেটাগুলোকে একসাথে নিয়ে আসা। সাধারণত টেবিলগুলোর মধ্যে কলামগুলো Primary Key আর Foreign Key এর মাধ্যমে রিলেশন তৈরি করা থাকে। আরো সহজভাবে বলা যায়, JOIN মানে হলো টেবিলগুলোকে একসাথে বসানো যাতে Relational Data গুলো একসাথে আউটপুটে দেখা যায়।
+* **Example** :
+```
+SELECT orders.order_id, customers.name
+FROM orders
+INNER JOIN customers ON orders.customer_id = customers.customer_id;
+
+```
+এখানে orders টেবিলের customer_id আর customers টেবিলের customer_id একসাথে মিলে গিয়ে একটা table এর আউটপুট দেয়।
+
+---
