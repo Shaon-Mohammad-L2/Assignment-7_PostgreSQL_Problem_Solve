@@ -71,3 +71,24 @@ INNER JOIN customers ON orders.customer_id = customers.customer_id;
 * **FULL JOIN**: দুই টেবিলের সব ডেটা দেখায়, মিল না থাকলেও।
 
 ---
+
+### 9. Explain the GROUP BY clause and its role in aggregation operations.
+
+GROUP BY clause এর কাজ হলো ডেটাকে কোনো নির্দিষ্ট কলামের ভিত্তিতে গ্রুপে ভাগ করা। প্রতিটি ইউনিক গ্রুপের জন্য আমরা অ্যাগ্রিগেশন ফাংশন যেমন COUNT(), SUM(), AVG(), ইত্যাদি ব্যবহার করতে পারি।
+আরো সহজভাবে বলা যায়, GROUP BY মানে হলো ডেটাকে গ্রুপে ভাগ করা আর প্রতিটি গ্রুপের জন্য হিসাব করা।
+* **Example** :
+```
+SELECT customer_id, COUNT(order_id) AS total_orders
+FROM orders
+GROUP BY customer_id;
+
+```
+এখানে প্রতিটি customer_id আলাদা গ্রুপ তৈরি করছে, আর প্রতিটি গ্রুপের জন্য অর্ডারের সংখ্যা বের করা হয়েছে।
+
+##### GROUP BY clause এর ভূমিকা:
+
+* বড় ডেটাসেটকে ছোট ছোট গ্রুপে ভাগ করে বিশ্লেষণ করা যায়।
+* প্রতিটি গ্রুপের জন্য সারাংশ বের করা সহজ হয়।
+* রিপোর্টিং কাজের জন্য বেশ useful।
+
+---
