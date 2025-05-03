@@ -92,3 +92,29 @@ GROUP BY customer_id;
 * রিপোর্টিং কাজের জন্য বেশ useful।
 
 ---
+
+### 10. How can you calculate aggregate functions like COUNT(), SUM(), and AVG() in PostgreSQL?
+
+PostgreSQL-এ অ্যাগ্রিগেট ফাংশনগুলো (যেমন COUNT(), SUM(), AVG()) ব্যবহার করা হয় টেবিলের ডেটার Summery বের করার জন্য।
+
+* **Example** :
+  
+#####  COUNT(): কোনো টেবিলে কতটি রো আছে তা গণনা করে:
+```
+SELECT COUNT(*) FROM orders;
+
+```
+#####  SUM(): কোনো কলামের সব সংখ্যার যোগফল বের করে:
+```
+SELECT SUM(price) FROM books;
+
+```
+##### AVG(): কোনো কলামের গড় মান বের করে:
+```
+SELECT AVG(price) FROM books;
+
+```
+
+গুলো সাধারণত GROUP BY এর সঙ্গে ব্যবহার হয় গ্রুপভিত্তিক হিসাব করার জন্য। সহজভাবে বললে, এগুলো দিয়ে ডেটার মোট সংখ্যা, যোগফল, বা গড় খুব সহজে বের করা যায়। 
+
+---
