@@ -63,4 +63,11 @@ INNER JOIN customers ON orders.customer_id = customers.customer_id;
 ```
 এখানে orders টেবিলের customer_id আর customers টেবিলের customer_id একসাথে মিলে গিয়ে একটা table এর আউটপুট দেয়।
 
+##### PostgreSQL এর  মধ্যে ৪ ধরণের Join করা হয় 
+
+* **INNER JOIN**: দুই টেবিলের মধ্যে মিল থাকলে দেখায়।
+* **LEFT JOIN**: বাম টেবিলের সব ডেটা দেখায়, মিল না থাকলেও।
+* **RIGHT JOIN**: ডান টেবিলের সব ডেটা দেখায়, মিল না থাকলেও।
+* **FULL JOIN**: দুই টেবিলের সব ডেটা দেখায়, মিল না থাকলেও।
+
 ---
